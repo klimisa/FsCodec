@@ -17,6 +17,7 @@
     <Compile Include="Codec.fs" />
     <Compile Include="Serdes.fs" />
     <Compile Include="VerbatimUtf8Converter.fs" />
+    <Compile Include="TypeChecker.fs" />
   </ItemGroup>
 
   <ItemGroup>
