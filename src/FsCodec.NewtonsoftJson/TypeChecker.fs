@@ -4,7 +4,7 @@ open System
 open System.Linq
 
 [<AutoOpen>]
-module ReflectionHelper =
+module TypeCheckerHelpers =
     let TypesImplementing<'T> (assembly : System.Reflection.Assembly) : Type seq =
         assembly.GetTypes()
         |> Seq.filter (fun t -> typeof<'T>.IsAssignableFrom(t))
