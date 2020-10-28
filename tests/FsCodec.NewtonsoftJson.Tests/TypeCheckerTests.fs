@@ -6,7 +6,10 @@ open System
 open Xunit
 
 module Domain =
-    type SampleType = { EnumSample: Enum }
+    type SampleType =
+        | Added of string
+        | Removed of string
+        interface TypeShape.UnionContract.IUnionContract
 
 [<Fact>]
 let ``All contract types use simple tagged types`` () =
